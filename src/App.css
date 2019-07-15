@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+
+body { 
+  background: #747e76;
+  text-align: center;
+  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.App-header {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 1.8em;
+  font-weight: 400;
+  margin: 10px 0 10px;
+}
+
+.App-contents { 
+  max-width:500px;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+  padding: 12px 15px;
+}
+
+nav li:hover {
+  background-color: #111111;
+}
+
+.active {
+  background-color: #333333;
+}
+
+h1 {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgba(0,0,0,0.5);
+  font-size: 1.8em;
+  font-weight: 400;
+  margin: 10px 0 10px;
+}
+
+h2 {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration:underline;
+  margin: 25px 0 10px;
+}
+
+a {
+  color: #cca;
+  text-decoration: none;
+}
+a:hover {
+    text-decoration: overline underline;
+    color: #333;
+  }
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+.project-image {
+  padding: 0;
+  width: inherit;
+  position: relative;
+  margin: 20px 0 40px 0;
+}
+.project-image h3 {
+  margin: 1.25em 0 .5em;
+}
+.project-image h4 {
+  margin: .5em;
+  font-size: .9em;
+}
+.project-image p {
+  margin: 0 10px 0 10px;
+  font-size:14px;
+}
+.project-image:hover img,
+.project-image:hover .filler {
+  opacity: 0.2;
+  filter: blur(5px);
+}
+.project-image:hover .caption {
+  opacity: 1; 
+}
+.project-image img, .filler {
+  padding: 0;
+  width: 100%;
+  display: block;
+  opacity: 1;
+  box-shadow: 5px 5px 10px #333;
+}
+.project-image img, .filler,
+.caption {
+  -webkit-transition: opacity 0.5s ease-out, filter 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out, filter 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out, filter 0.5s ease-out;
+  transition: opacity 0.5s ease-out, filter 0.5s ease-out;
+}
+.caption {
+  position: absolute;
+  color: #000;
+  left: 0;
+  top: 5%;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  height:95%;
+}
+.filler {
+  width: inherit;
+  padding-top: 35%;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAP0lEQVQoU42Q0QoAIAgDz///aMPAKKeQb26HTg0tB6zKVUhI4Bus5tMn2K4Djh7gBGXM7Uvo5riQ/BfUNwwTWfn+Cgg4zkoRAAAAAElFTkSuQmCC) repeat;
+}
