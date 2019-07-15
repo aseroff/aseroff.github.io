@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/aseroff
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://andy.seroff.co
+  * I am aseroff (https://keybase.io/aseroff) on keybase.
+  * I have a public key with fingerprint CFE3 14CB 180E A640 BAF7  9ACC CBD2 671B 9D67 371F
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01019d70ca39d47ee2711bc05a1326afbe99ea49df9c5b4cb2bab7ddfcc34f6d710d0a",
+            "fingerprint": "cfe314cb180ea640baf79acccbd2671b9d67371f",
+            "host": "keybase.io",
+            "key_id": "cbd2671b9d67371f",
+            "kid": "01019d70ca39d47ee2711bc05a1326afbe99ea49df9c5b4cb2bab7ddfcc34f6d710d0a",
+            "uid": "18e65fe3c33a47b7f93764bf6fa9ca19",
+            "username": "aseroff"
+        },
+        "revoke": {
+            "sig_ids": [
+                "7cc9237709ac3217e722c27edd5c2b63fba2f153b220831d629a6f246b864ce30f"
+            ]
+        },
+        "service": {
+            "hostname": "andy.seroff.co",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1491851056,
+    "expire_in": 157680000,
+    "prev": "afa45a6c84bc8d7848d93c485534a9d185fb4422e807f950cc3cdcfe3a962828",
+    "seqno": 11,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.68
+Comment: https://keybase.io/crypto
+
+yMJqAnicrZJfaBxVFMZ3q6kxmCooFhRaeiMBdQn339w7dwNCW4UWSySi1mLLcv8m
+Q9aZdXY2yRqCFFSMYLXVptYWkVpL09hqS6lYFWojiMQaqQVbjRLBB7U27osgvuid
+aN989L4Md+Y7v/Odb84nndcUOoqL4Hj3/PoP7ivOfvx7o/Do5a/hGFCJaYLyGBiy
+Sw9bNbaeVYYiA8oAIoiE4VBLIgzl1mKOkNIwkIhgJp2yQlhJhXFCB4pqhZVU3Bin
+NaGOGY6ggRKUgIviAZvW0ijOPFY7S5BXoxBayShU0nEhtdbKYMaREoZxwpHzhYNJ
+Pa/w5pSs254o8e/8pbJk7z/0/7PvxhIOhZYF3rMmRFKuuBOEM6occ1JoiUQurNs0
+lo9br/Y+08Q5MF4CqR1Ohmweaz0a8J7roPwY4FoLTDiHfmSCEbccY425NSbQWDHi
+lMQOBURhDEOCDMNCMocpUyGj2hLowDbP9l2GI70Ez0O62jw2zZ5/DPToPKxammSJ
+Tqr+22CW1erl3FfWrOXiEasq/2IqKoqN/0m+Ytim9SiJQRl5pc6inIuoQGGAYMBK
+wI7WotRWolwRcBZCf/I+djjv7yQNJNMhVTo0PKShEUTTMAgIlcJ4iFOUYmxD6GMM
+oA9cm3wfpGA4xCHIB3siTjwbeZ9ywDN9drHMGqkF42fPbL22UOwoLG9blm9voeP6
+m67u9JxtL5w+/83Te1bNrMaj3295ZNXeNdl3K8Sb8MK7i++tbG4l0z++9ROu/rbp
+YPvLezfN9p+YeA1031btO7K7dXNl4aH9/eNjz8f39/+5/Y7tc3dNtMSWh5NXSutm
+4DO/nPuBjc1dbLwu0p1HSxeObtz215oHivPVqY3HJttONt65u+v2XcVnDzy49tzB
+zrf7bmx9te6LQ3+8sef82sKX3YdHVuw/nnTJ6slbdmx+btfI7s9nF+596eLUTrLv
+183TL56Qp3qWn24/cGXD5dalkcnOz+hqvbiDj/Y2X32/9dHk+tpgX9uTRz6cujRx
+3dDZGw4tPPXzTH1Zl1y4Jy2Onqms3IdPzU992ruh94U7bz327fSVvwEkyWEB
+=AIv/
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/aseroff
+
+==================================================================

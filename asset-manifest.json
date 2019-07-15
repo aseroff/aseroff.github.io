@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.748c5540.chunk.css",
+    "main.js": "/static/js/main.60c46712.chunk.js",
+    "main.js.map": "/static/js/main.60c46712.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.42340fb5.chunk.js": "/static/js/2.42340fb5.chunk.js",
+    "static/js/2.42340fb5.chunk.js.map": "/static/js/2.42340fb5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.068404709ebc902f51203fb5324d3465.js": "/precache-manifest.068404709ebc902f51203fb5324d3465.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.748c5540.chunk.css.map": "/static/css/main.748c5540.chunk.css.map",
+    "static/media/bach.png": "/static/media/bach.89576a0a.png",
+    "static/media/cfdb.png": "/static/media/cfdb.ca78b52a.png",
+    "static/media/myguy.png": "/static/media/myguy.4fa3bf53.png",
+    "static/media/nextguide.png": "/static/media/nextguide.8fd6aecd.png",
+    "static/media/ocho.png": "/static/media/ocho.804831be.png",
+    "static/media/otl.png": "/static/media/otl.a5a10780.png",
+    "static/media/pic.png": "/static/media/pic.9c0de54f.png",
+    "static/media/quips.png": "/static/media/quips.08ad6acd.png",
+    "static/media/sideshow.png": "/static/media/sideshow.b28da3f5.png",
+    "static/media/tndrbox.png": "/static/media/tndrbox.71f3bfb4.png",
+    "static/media/wedding.png": "/static/media/wedding.b043e872.png"
+  }
+}
