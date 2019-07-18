@@ -1,4 +1,4 @@
-This repo is the source and builds for aseroff's personal portfolio site. Note that the master branch is `source`, as github.io hosts the master branch.
+This repo is the source and builds for aseroff's personal portfolio site. Note that the master branch is `source`, as github.io will only host the `master` branch.
 
 ## Development
 
@@ -16,9 +16,12 @@ This repo is the source and builds for aseroff's personal portfolio site. Note t
 ### https://aseroff.github.io
 
 1. `git checkout pages`
+1. `git merge source`
 1. `npm update`
 1. `npm run build`
 1. `npm run deploy`
+1. `git checkout gh-pages`
 1. `git pull`
 1. `git checkout master`
 1. `git merge gh-pages`
+1. `git push`
