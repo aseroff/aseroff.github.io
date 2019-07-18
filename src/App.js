@@ -43,7 +43,7 @@ class App extends Component {
         <div className="App-contents">
           <h1>projects</h1>
           <h2>professional projects</h2>
-          <p>Some of the most notable projects I've worked on. If the link takes you to press, the project is not accessable via the web.</p>
+          <p>Some of the most notable projects I've worked on. If the link takes you to press, the project is not accessible via the web (anymore).</p>
           <Project key="otl" name="Open Textbook Library" url="https://open.umn.edu/opentextbooks" subtitle="University of Minnesota, 2018-" description="The Open Textbook Library provides a growing catalog of free, peer-reviewed, and openly-licensed textbooks.<br/> Build with Ruby on Rails and Bootstrap." img={otl} />
           <Project key="myguy" name="MyGuy" url="https://www.yahoo.com/news/viggle-kicks-off-football-season-144900231.html" subtitle="Viggle, 2015" description="Rails platform that used live NFL play data to create single-game fantasy leagues." img={myguy} />
           <Project key="clorox" name="Clorox Matchmaker" url="https://www.mobilemarketer.com/ex/mobilemarketer/cms/news/strategy/22892.html" subtitle="Viggle, 2015" description="Rails platform for creating games where the player predicts who will be eliminated from competition reality shows. Debuted as part of a Clorox campaign around ABC's The Bachelorette, and most recently used by HGTV for Ellen's Design Challenge." img={bach}/>
