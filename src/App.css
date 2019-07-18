@@ -58,7 +58,9 @@ h2 {
   text-decoration:underline;
   margin: 25px 0 10px;
 }
-
+p {
+  padding: 0 20px 0 20px;
+}
 a {
   color: #cca;
   text-decoration: none;
@@ -86,8 +88,8 @@ ul {
   font-size: .9em;
 }
 .project-image p {
-  margin: 0 10px 0 10px;
-  font-size:14px;
+  margin: 0 5% 0 5%;
+  font-size: 13px;
 }
 .project-image:hover img,
 .project-image:hover .filler {
@@ -115,7 +117,7 @@ ul {
   position: absolute;
   color: #000;
   left: 0;
-  top: 5%;
+  top: 0;
   right: 0;
   bottom: 0;
   opacity: 0;
@@ -125,4 +127,9 @@ ul {
   width: inherit;
   padding-top: 35%;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAP0lEQVQoU42Q0QoAIAgDz///aMPAKKeQb26HTg0tB6zKVUhI4Bus5tMn2K4Djh7gBGXM7Uvo5riQ/BfUNwwTWfn+Cgg4zkoRAAAAAElFTkSuQmCC) repeat;
+}
+@media only screen and (max-width: 500px) {
+  .caption {
+    font-size: 0.8em;
+  }
 }
