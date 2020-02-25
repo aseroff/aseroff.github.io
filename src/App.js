@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Nav from './nav.js';
 import Project from './project.js';
+import Post from './/post.js';
 import pic from './images/pic.png';
 import bach from './images/projects/bach.png';
 import cfdb from './images/projects/cfdb.png';
@@ -20,12 +21,32 @@ class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { page: 'bio' };
+    this.state = { 
+      page: 'bio',
+      posts: []
+    };
     this.changePage = this.changePage.bind(this);
+  }
+
+  componentDidMount() {
+    fetch('https://aseroff.micro.blog/feed.json')
+    .then(response => response.json())
+    .then((jsonData) => {
+      var posts = jsonData["items"]
+      this.setState({posts: posts})
+      console.log(posts)
+    })
+    .catch((error) => {
+      console.error(error)
+    })
   }
 
   changePage(page) {
     this.setState({ page: page });
+  }
+
+  posts() {
+    return this.state.posts.map(post => <Post key={post["date_published"]}  title={post["date_published"]} content={post["content_html"]} />)
   }
 
   content(page) {
@@ -35,6 +56,13 @@ class App extends Component {
           <h1>bio</h1>
           <img src={pic} alt="Andy" />
           <p>Professional programmer, master musician, television technician, willing writer, épée fencer emeritus.</p>
+        </div>
+      )
+    } else if (page === 'blog') { 
+      return (
+        <div className="App-contents">
+          <h1>blog</h1>
+          {this.posts()}
         </div>
       )
     } else if (page === 'projects') {
@@ -107,6 +135,7 @@ class App extends Component {
         <nav>
         <ul className="nav">
           <Nav destination="bio" handler={this.changePage} active={this.state.page === "bio"} />
+          <Nav destination="blog" handler={this.changePage} active={this.state.page === "blog"} />
           <Nav destination="projects" handler={this.changePage} active={this.state.page === "projects"} />
           <Nav destination="links" handler={this.changePage} active={this.state.page === "links"} />
         </ul>
