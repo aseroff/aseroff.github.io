@@ -37,8 +37,7 @@ class App extends Component {
           <p>Professional programmer, master musician, television technician, willing writer, épée fencer emeritus.</p>
         </div>
       )
-    }
-    else if (page === 'projects') {
+    } else if (page === 'projects') {
       return (
         <div className="App-contents">
           <h1>projects</h1>
@@ -59,8 +58,7 @@ class App extends Component {
           <Project key="tndrbox" name="Tndrbox" url="https://www.tndrbox.com" subtitle="designer, 2012-2013" description="Community events board.<br/> Designed with Balsamiq, Photoshop" img={tndrbox} />
         </div>
       )
-    }
-    else if (page === 'links') {
+    } else if (page === 'links') {
       return (
         <div className="App-contents">
           <h1>around</h1>
@@ -96,8 +94,7 @@ class App extends Component {
           </ul>
         </div>
       )
-    }
-    else {
+    } else {
       return (<p>404</p>)
     }
   }
