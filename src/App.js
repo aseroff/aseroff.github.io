@@ -46,7 +46,7 @@ class App extends Component {
   }
 
   posts() {
-    return this.state.posts.map(post => <Post key={post["date_published"]}  title={post["date_published"]} content={post["content_html"]} />)
+    return this.state.posts.map(post => <Post key={post["id"]} title={post["title"]} date={post["date_published"]} url={post["url"]} content={post["content_html"]} />)
   }
 
   content(page) {
@@ -60,7 +60,7 @@ class App extends Component {
       )
     } else if (page === 'blog') { 
       return (
-        <div className="App-contents">
+        <div className="App-contents blog">
           <h1>blog</h1>
           {this.posts()}
         </div>
