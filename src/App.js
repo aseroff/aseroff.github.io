@@ -15,7 +15,6 @@ import sideshow from './images/projects/sideshow.png';
 import tndrbox from './images/projects/tndrbox.png';
 import tokens from './images/projects/tokens.png';
 import wedding from './images/projects/wedding.png';
-import './App.scss';
 
 class App extends Component {
 
