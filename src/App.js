@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Nav from './nav.js';
 import Project from './project.js';
-import Post from './/post.js';
+import Post from './post.js';
 import pic from './images/pic.png';
 import bach from './images/projects/bach.png';
 import cfdb from './images/projects/cfdb.png';
