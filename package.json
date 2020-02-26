@@ -1,7 +1,7 @@
 {
   "name": "andy-app",
   "homepage": "https://andy.seroff.co/",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.2.0",
