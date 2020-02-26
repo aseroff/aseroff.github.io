@@ -20,6 +20,8 @@ This repo is the source and builds for aseroff's personal portfolio site. Note t
 1. `npm update`
 1. `npm run build`
 1. `npm run deploy`
+1. `git merge gh-pages`
+1. `git pull`
 1. `git checkout master`
 1. `git merge gh-pages`
 1. `git push`

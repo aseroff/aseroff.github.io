@@ -15,7 +15,7 @@ body {
 
 .App-title {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
+  color: #cca;
   font-size: 1.8em;
   font-weight: 400;
   margin: 10px 0 10px;
@@ -26,23 +26,28 @@ body {
   margin: 0 auto;
 }
 
-nav ul {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
+.App-contents.blog { 
+  max-width: 100%;
+  margin: 0 200px 0 200px;
 }
 
-nav li {
-  float: left;
-  padding: 12px 15px;
-}
-
-nav li:hover {
-  background-color: #111111;
-}
-
-.active {
-  background-color: #333333;
+nav {
+  ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    float: left;
+    padding: 12px 15px;
+    color: #cca;
+    &:hover {
+      background-color: #111111;
+    }
+  }
+  li.active {
+    background-color: #333333;
+  }
 }
 
 h1 {
@@ -64,32 +69,91 @@ p {
 a {
   color: #cca;
   text-decoration: none;
-}
-a:hover {
+  :hover {
     text-decoration: overline underline;
     color: #333;
   }
+}
 
+hr {
+  margin: 5%;
+  border-color: #cca;
+}
 ul {
   padding: 0;
   list-style: none;
 }
+.blog {
+  p {
+    text-align: left;
+  }
+  ul {
+    text-align: left;
+    list-style: circle;
+    margin-left: 5%;
+  }
+  pre {
+    text-align: left;
+    display: block;
+    padding: 9.5px;
+    margin: 5%;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #cca;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+}
+
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  background-color: #cca;
+  border-radius: 4px;
+}
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  background-color: #cca;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border-radius: 0;
+}
+button {
+  background-color: #cca;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 16px;
+}
+
 .project-image {
   padding: 0;
   width: inherit;
   position: relative;
   margin: 20px 0 40px 0;
-}
-.project-image h3 {
-  margin: 1.25em 0 .5em;
-}
-.project-image h4 {
-  margin: .5em;
-  font-size: .9em;
-}
-.project-image p {
-  margin: 0 5% 0 5%;
-  font-size: 13px;
+  h3 {
+    margin: 1.25em 0 .5em;
+  }
+  h4 {
+    margin: .5em;
+    font-size: .9em;
+  }
+  p {
+    margin: 0 5% 0 5%;
+    font-size: 13px;
+  }
+  img, .filler {
+    padding: 0;
+    width: 100%;
+    display: block;
+    opacity: 1;
+    box-shadow: 5px 5px 10px #333;
+  }
 }
 .project-image:hover img,
 .project-image:hover .filler {
@@ -98,13 +162,6 @@ ul {
 }
 .project-image:hover .caption {
   opacity: 1; 
-}
-.project-image img, .filler {
-  padding: 0;
-  width: 100%;
-  display: block;
-  opacity: 1;
-  box-shadow: 5px 5px 10px #333;
 }
 .project-image img, .filler,
 .caption {
@@ -126,6 +183,7 @@ ul {
 .filler {
   width: inherit;
   padding-top: 35%;
+  height: 166px;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAP0lEQVQoU42Q0QoAIAgDz///aMPAKKeQb26HTg0tB6zKVUhI4Bus5tMn2K4Djh7gBGXM7Uvo5riQ/BfUNwwTWfn+Cgg4zkoRAAAAAElFTkSuQmCC) repeat;
 }
 @media only screen and (max-width: 500px) {

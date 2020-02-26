@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Nav from './nav.js';
 import Project from './project.js';
+import Post from './/post.js';
 import pic from './images/pic.png';
 import bach from './images/projects/bach.png';
 import cfdb from './images/projects/cfdb.png';
@@ -14,18 +15,48 @@ import sideshow from './images/projects/sideshow.png';
 import tndrbox from './images/projects/tndrbox.png';
 import tokens from './images/projects/tokens.png';
 import wedding from './images/projects/wedding.png';
-import './App.css';
+import './App.scss';
 
 class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { page: 'bio' };
+    this.state = { 
+      page: 'bio',
+      posts: [],
+      posts_shown: 5
+    };
     this.changePage = this.changePage.bind(this);
+  }
+
+  componentDidMount() {
+    fetch('https://aseroff.micro.blog/feed.json')
+    .then(response => response.json())
+    .then((jsonData) => {
+      var posts = jsonData["items"]
+      this.setState({posts: posts})
+    })
+    .catch((error) => {
+      console.error(error)
+    })
   }
 
   changePage(page) {
     this.setState({ page: page });
+  }
+
+  posts(limit) {
+    return this.state.posts.slice(0, this.state.posts_shown).map(post => <Post key={post["id"]} title={post["title"]} date={post["date_published"]} url={post["url"]} content={post["content_html"]} />)
+  }
+
+  display_more(count) {
+    this.setState({posts_shown: this.state.posts_shown + count})
+  }
+
+  more_button() {
+    if (this.state.posts_shown < this.state.posts.length) {
+      return <button onClick={e => this.display_more(5)} >Load more</button>
+    }
   }
 
   content(page) {
@@ -37,8 +68,15 @@ class App extends Component {
           <p>Professional programmer, master musician, television technician, willing writer, épée fencer emeritus.</p>
         </div>
       )
-    }
-    else if (page === 'projects') {
+    } else if (page === 'blog') { 
+      return (
+        <div className="App-contents blog">
+          <h1>blog</h1>
+          {this.posts(this.state.posts_shown)}
+          {this.more_button()}
+        </div>
+      )
+    } else if (page === 'projects') {
       return (
         <div className="App-contents">
           <h1>projects</h1>
@@ -59,8 +97,7 @@ class App extends Component {
           <Project key="tndrbox" name="Tndrbox" url="https://www.tndrbox.com" subtitle="designer, 2012-2013" description="Community events board.<br/> Designed with Balsamiq, Photoshop" img={tndrbox} />
         </div>
       )
-    }
-    else if (page === 'links') {
+    } else if (page === 'links') {
       return (
         <div className="App-contents">
           <h1>around</h1>
@@ -96,8 +133,7 @@ class App extends Component {
           </ul>
         </div>
       )
-    }
-    else {
+    } else {
       return (<p>404</p>)
     }
   }
@@ -110,6 +146,7 @@ class App extends Component {
         <nav>
         <ul className="nav">
           <Nav destination="bio" handler={this.changePage} active={this.state.page === "bio"} />
+          <Nav destination="blog" handler={this.changePage} active={this.state.page === "blog"} />
           <Nav destination="projects" handler={this.changePage} active={this.state.page === "projects"} />
           <Nav destination="links" handler={this.changePage} active={this.state.page === "links"} />
         </ul>
