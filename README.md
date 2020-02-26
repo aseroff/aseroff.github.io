@@ -16,5 +16,4 @@ This repo is the source and builds for aseroff's personal portfolio site. Note t
 
 1. `git checkout pages`
 1. `git merge source`
-1. `npm run build`
 1. `npm run deploy`
