@@ -8,7 +8,7 @@ export class Post extends Component {
         <h2>
           <a href={this.props.url}>{this.props.title}</a>
         </h2>
-        <small>{Date(this.props.date)}</small>
+        <small>{this.props.date.split('T').slice(0, 1)}</small>
         <br/><br/>
         <div className='content' dangerouslySetInnerHTML={{__html: this.props.content}} />
         <hr />
