@@ -5,11 +5,13 @@
   "private": true,
   "dependencies": {
     "gh-pages": "^2.2.0",
+    "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-safe-html": "^0.6.1",
     "react-sanitized-html": "^2.0.0",
     "react-scripts": "^3.4.0",
+    "safe-html": "^1.0.0",
     "sanitize-html": "^1.22.0"
   },
   "scripts": {

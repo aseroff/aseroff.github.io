@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
-import ReactSafeHtml from 'react-safe-html';
 
 export class Post extends Component {
 
   render() {
     return (
-      <div>
+      <div className='post'>
         <h2>
           <a href={this.props.url}>{this.props.title}</a>
         </h2>
-        <small>{this.props.date}</small><br/>
-        <ReactSafeHtml
-          allowedAttributes={{ 'a': ['href'] }}
-          allowedTags={['a']}
-          html={ this.props.content }
-        />
+        <small>{Date(this.props.date)}</small>
+        <br/><br/>
+        <div className='content' dangerouslySetInnerHTML={{__html: this.props.content}} />
+        <hr />
       </div>
     );
   }

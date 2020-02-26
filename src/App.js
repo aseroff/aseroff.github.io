@@ -15,7 +15,7 @@ import sideshow from './images/projects/sideshow.png';
 import tndrbox from './images/projects/tndrbox.png';
 import tokens from './images/projects/tokens.png';
 import wedding from './images/projects/wedding.png';
-import './App.css';
+import './App.scss';
 
 class App extends Component {
 
@@ -23,7 +23,8 @@ class App extends Component {
     super(props);
     this.state = { 
       page: 'bio',
-      posts: []
+      posts: [],
+      posts_shown: 5
     };
     this.changePage = this.changePage.bind(this);
   }
@@ -34,7 +35,6 @@ class App extends Component {
     .then((jsonData) => {
       var posts = jsonData["items"]
       this.setState({posts: posts})
-      console.log(posts)
     })
     .catch((error) => {
       console.error(error)
@@ -45,8 +45,18 @@ class App extends Component {
     this.setState({ page: page });
   }
 
-  posts() {
-    return this.state.posts.map(post => <Post key={post["id"]} title={post["title"]} date={post["date_published"]} url={post["url"]} content={post["content_html"]} />)
+  posts(limit) {
+    return this.state.posts.slice(0, this.state.posts_shown).map(post => <Post key={post["id"]} title={post["title"]} date={post["date_published"]} url={post["url"]} content={post["content_html"]} />)
+  }
+
+  display_more(count) {
+    this.setState({posts_shown: this.state.posts_shown + count})
+  }
+
+  more_button() {
+    if (this.state.posts_shown < this.state.posts.length) {
+      return <button onClick={e => this.display_more(5)} >Load more</button>
+    }
   }
 
   content(page) {
@@ -62,7 +72,8 @@ class App extends Component {
       return (
         <div className="App-contents blog">
           <h1>blog</h1>
-          {this.posts()}
+          {this.posts(this.state.posts_shown)}
+          {this.more_button()}
         </div>
       )
     } else if (page === 'projects') {
