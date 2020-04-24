@@ -124,6 +124,7 @@ class App extends Component {
             <li><a href="https://open.spotify.com/user/aseroff">spotify</a></li>
             <li><a href="https://soundcloud.com/aseroff-1">soundcloud</a></li>
             <li><a href="https://www.last.fm/user/rvaen17">last.fm</a></li>
+            <li><a href="https://www.ultimate-guitar.com/u/rvaen">ultimate guitar</a></li>
           </ul>
 
           <h2>other</h2>
