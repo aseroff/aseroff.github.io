@@ -103,14 +103,15 @@ class App extends Component {
           <h2>contact</h2>
           <p>For inquiries about web development work, or just to get in touch, <a href="mailto:andy@seroff.co">email</a> me.</p>
 
-          <h2>professional</h2>
+          <h2>development</h2>
           <ul>
             <li><a href="https://www.github.com/aseroff">github</a></li>
-            <li><a href="https://www.linkedin.com/in/aseroff">linkedin</a></li>
+            <li><a href="https://www.dribbble.com/Aseroff">dribbble</a></li>
           </ul>
 
           <h2>social</h2>
           <ul>
+            <li><a href="https://www.linkedin.com/in/aseroff">linkedin</a></li>
             <li><a href="https://www.facebook.com/aseroff">facebook</a></li>
             <li><a href="https://www.twitter.com/aseroff">twitter</a></li>
             <li><a href="https://aseroff.tumblr.com/">tumblr</a></li>
