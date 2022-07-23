@@ -1,33 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.38a6f975.chunk.css",
-    "main.js": "/static/js/main.2cd85d89.chunk.js",
-    "main.js.map": "/static/js/main.2cd85d89.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.49e666ce.js",
-    "runtime-main.js.map": "/static/js/runtime-main.49e666ce.js.map",
-    "static/js/2.19f0167c.chunk.js": "/static/js/2.19f0167c.chunk.js",
-    "static/js/2.19f0167c.chunk.js.map": "/static/js/2.19f0167c.chunk.js.map",
+    "main.css": "/static/css/main.28de0163.css",
+    "main.js": "/static/js/main.ee12b2fb.js",
+    "static/media/myguy.png": "/static/media/myguy.fbcb27257b3c4d12ef35.png",
+    "static/media/pic.png": "/static/media/pic.fced16a8394a94073261.png",
+    "static/media/wedding.png": "/static/media/wedding.605cbdfad02b9240da18.png",
+    "static/media/sideshow.png": "/static/media/sideshow.e87b9f4fe1cc91f7c2ab.png",
+    "static/media/tndrbox.png": "/static/media/tndrbox.69aa32504356471d1d24.png",
+    "static/media/bach.png": "/static/media/bach.111cb5c77d8fa8d29f7f.png",
+    "static/media/quips.png": "/static/media/quips.13678526f9bd7f9ab4ec.png",
+    "static/media/otl.png": "/static/media/otl.e87c7aaab9141ca24800.png",
+    "static/media/ocho.png": "/static/media/ocho.b3fd33b867cee3fedf1d.png",
+    "static/media/nextguide.png": "/static/media/nextguide.ad4633d78d69b14359ac.png",
+    "static/media/cfdb.png": "/static/media/cfdb.c1413f5773d82f09d1b7.png",
     "index.html": "/index.html",
-    "precache-manifest.4145f7d46633a0f0e02c72219dd4ebae.js": "/precache-manifest.4145f7d46633a0f0e02c72219dd4ebae.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.38a6f975.chunk.css.map": "/static/css/main.38a6f975.chunk.css.map",
-    "static/js/2.19f0167c.chunk.js.LICENSE.txt": "/static/js/2.19f0167c.chunk.js.LICENSE.txt",
-    "static/media/bach.png": "/static/media/bach.89576a0a.png",
-    "static/media/cfdb.png": "/static/media/cfdb.ca78b52a.png",
-    "static/media/myguy.png": "/static/media/myguy.4fa3bf53.png",
-    "static/media/nextguide.png": "/static/media/nextguide.8fd6aecd.png",
-    "static/media/ocho.png": "/static/media/ocho.804831be.png",
-    "static/media/otl.png": "/static/media/otl.a5a10780.png",
-    "static/media/pic.png": "/static/media/pic.9c0de54f.png",
-    "static/media/quips.png": "/static/media/quips.08ad6acd.png",
-    "static/media/sideshow.png": "/static/media/sideshow.b28da3f5.png",
-    "static/media/tndrbox.png": "/static/media/tndrbox.71f3bfb4.png",
-    "static/media/wedding.png": "/static/media/wedding.b043e872.png"
+    "main.28de0163.css.map": "/static/css/main.28de0163.css.map",
+    "main.ee12b2fb.js.map": "/static/js/main.ee12b2fb.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.49e666ce.js",
-    "static/js/2.19f0167c.chunk.js",
-    "static/css/main.38a6f975.chunk.css",
-    "static/js/main.2cd85d89.chunk.js"
+    "static/css/main.28de0163.css",
+    "static/js/main.ee12b2fb.js"
   ]
 }
