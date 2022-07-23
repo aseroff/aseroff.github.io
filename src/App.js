@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import Nav from './nav.js';
 import Project from './project.js';
-import Post from './post.js';
 import pic from './images/pic.png';
 import bach from './images/projects/bach.png';
 import cfdb from './images/projects/cfdb.png';
@@ -28,34 +27,8 @@ class App extends Component {
     this.changePage = this.changePage.bind(this);
   }
 
-  componentDidMount() {
-    fetch('https://aseroff.micro.blog/feed.json')
-    .then(response => response.json())
-    .then((jsonData) => {
-      var posts = jsonData["items"]
-      this.setState({posts: posts})
-    })
-    .catch((error) => {
-      console.error(error)
-    })
-  }
-
   changePage(page) {
     this.setState({ page: page });
-  }
-
-  posts(limit) {
-    return this.state.posts.slice(0, this.state.posts_shown).map(post => <Post key={post["id"]} title={post["title"]} date={post["date_published"]} url={post["url"]} content={post["content_html"]} />)
-  }
-
-  display_more(count) {
-    this.setState({posts_shown: this.state.posts_shown + count})
-  }
-
-  more_button() {
-    if (this.state.posts_shown < this.state.posts.length) {
-      return <button onClick={e => this.display_more(5)} >Load more</button>
-    }
   }
 
   content(page) {
@@ -65,14 +38,6 @@ class App extends Component {
           <h1>bio</h1>
           <img src={pic} alt="Andy" />
           <p>Professional programmer, master musician, television technician, willing writer, épée fencer emeritus.</p>
-        </div>
-      )
-    } else if (page === 'blog') { 
-      return (
-        <div className="App-contents blog">
-          <h1>blog</h1>
-          {this.posts(this.state.posts_shown)}
-          {this.more_button()}
         </div>
       )
     } else if (page === 'projects') {
@@ -88,9 +53,9 @@ class App extends Component {
           <Project key="quips" name="Quips" url="https://techcrunch.com/2012/11/05/miso-quips/" subtitle="Miso, 2012-2013" description="Quips lets you find a great scene from a TV show, caption it with your thoughts, and share it instantly!" img={quips} />
           <Project key="sideshows" name="SideShows" url="https://mashable.com/2012/02/02/hbo-miso-game-of-thrones/" subtitle="Miso, 2011-2012" description="A slide show of timed content playing along with TV shows. Notable clients included HBO, Showtime, and USA Network." img={sideshow}  />
           <h2>personal web projects</h2>
-          <Project key="tokens" name="Tokens" url="https://www.tokensapp.co" subtitle="2017-" description="Board Game Check-in App.<br/> Website built with Ruby on Rails and Bootstrap, AMP available.<br/> Mobile apps built with React Native." img={tokens} />
-          <Project key="andy" name="andy.seroff.co" url="https://andy.seroff.co" subtitle="2016-" description="Personal site and directory.<br/> Built with Middleman, rebuilt with React." />
-          <Project key="boutcommittee" name="BoutCommittee" url="https://www.bout-committee.com" subtitle="2016-" description="NCAA fencing tournament administration platform and result database.<br/> Built with Ruby on Rails and Bootstrap, AMP available and uses Selectize.js" img={cfdb} />
+          <Project key="tokens" name="Tokens" url="https://www.tokensapp.co" subtitle="2017-2019" description="Board Game Check-in App.<br/> Website built with Ruby on Rails and Bootstrap, AMP available.<br/> Mobile apps built with React Native." img={tokens} />
+          <Project key="andy" name="andy.seroff.co" url="https://andy.seroff.co" subtitle="2016-" description="Personal site and directory.<br/> Built with Middleman, rebuilt with React.<br /> Source code on GitHub." />
+          <Project key="boutcommittee" name="BoutCommittee" url="https://www.bout-committee.com" subtitle="2016-2019" description="NCAA fencing tournament administration platform and result database.<br/> Built with Ruby on Rails and Bootstrap, AMP available and uses Selectize.js" img={cfdb} />
           <Project key="ocho" name="Ocho" url="https://ocho.seroff.co" subtitle="2015-" description="Site for the rules to a silly card game.<br/> Built with Middleman, open-sourced on GitHub." img={ocho} />
           <Project key="wedding" name="Wedding" url="" subtitle="circa 2016" description="Site providing information for wedding guests." img={wedding} />
           <Project key="tndrbox" name="Tndrbox" url="https://www.tndrbox.com" subtitle="designer, 2012-2013" description="Community events board.<br/> Designed with Balsamiq, Photoshop" img={tndrbox} />
@@ -147,7 +112,6 @@ class App extends Component {
         <nav>
         <ul className="nav">
           <Nav destination="bio" handler={this.changePage} active={this.state.page === "bio"} />
-          <Nav destination="blog" handler={this.changePage} active={this.state.page === "blog"} />
           <Nav destination="projects" handler={this.changePage} active={this.state.page === "projects"} />
           <Nav destination="links" handler={this.changePage} active={this.state.page === "links"} />
         </ul>
