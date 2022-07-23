@@ -54,7 +54,7 @@ class App extends Component {
           <Project key="sideshows" name="SideShows" url="https://mashable.com/2012/02/02/hbo-miso-game-of-thrones/" subtitle="Miso, 2011-2012" description="A slide show of timed content playing along with TV shows. Notable clients included HBO, Showtime, and USA Network." img={sideshow}  />
           <h2>personal web projects</h2>
           <Project key="tokens" name="Tokens" url="https://www.tokensapp.co" subtitle="2017-2019" description="Board Game Check-in App.<br/> Website built with Ruby on Rails and Bootstrap, AMP available.<br/> Mobile apps built with React Native." img={tokens} />
-          <Project key="andy" name="andy.seroff.co" url="https://andy.seroff.co" subtitle="2016-" description="Personal site and directory.<br/> Built with Middleman, rebuilt with React.<br /> Source code on GitHub." />
+          <Project key="andy" name="andy.seroff.co" url="https://andy.seroff.co" subtitle="2016-" description="Personal site and directory.<br/> Built with Middleman, rebuilt with React.<br/> Source code on GitHub." />
           <Project key="boutcommittee" name="BoutCommittee" url="https://www.bout-committee.com" subtitle="2016-2019" description="NCAA fencing tournament administration platform and result database.<br/> Built with Ruby on Rails and Bootstrap, AMP available and uses Selectize.js" img={cfdb} />
           <Project key="ocho" name="Ocho" url="https://ocho.seroff.co" subtitle="2015-" description="Site for the rules to a silly card game.<br/> Built with Middleman, open-sourced on GitHub." img={ocho} />
           <Project key="wedding" name="Wedding" url="" subtitle="circa 2016" description="Site providing information for wedding guests." img={wedding} />
