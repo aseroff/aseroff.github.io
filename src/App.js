@@ -78,7 +78,9 @@ class App extends Component {
           <ul>
             <li><a href="https://www.linkedin.com/in/aseroff">linkedin</a></li>
             <li><a href="https://www.facebook.com/aseroff">facebook</a></li>
-            <li><a href="https://www.twitter.com/aseroff">twitter</a></li>
+            <li><a href="https://www.x.com/aseroff">x</a></li>
+            <li><a href="https://bsky.app/profile/andy.seroff.co">bluesky</a></li>
+            <li><a href="https://ruby.social/@aseroff" rel="me">mastodon</a></li>
             <li><a href="https://aseroff.tumblr.com/">tumblr</a></li>
             <li><a href="https://www.instagram.com/aseroff">instagram</a></li>
             <li><a href="https://www.pinterest.com/aseroff">pinterest</a></li>
