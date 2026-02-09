@@ -65,9 +65,6 @@ class App extends Component {
       return (
         <div className="App-contents">
           <h1>around</h1>
-          <h2>contact</h2>
-          <p>For inquiries about web development work, or just to get in touch, <a href="mailto:andy@seroff.co">email</a> me.</p>
-
           <h2>development</h2>
           <ul>
             <li><a href="https://www.github.com/aseroff">github</a></li>
