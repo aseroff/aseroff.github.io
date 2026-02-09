@@ -10,6 +10,6 @@
 /* SITE */
 
 	Went live: 2016-10-20
-	Last update: 2022-07-23
+	Last update: 2024-12-09
 	Standards: HTML5, CSS3 
 	Software: React 4.2
